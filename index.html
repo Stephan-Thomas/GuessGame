@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        GUESS-A_THON(Only 6 Trials)
-
-        <div class="container">
-            <h1>
-                Guess a number between 1 and 100
-                <button onclick="gameStart()">Start Game</button>
-            </h1>
-            <input type="number" id="guess" />
-            <button id="submit" onclick="takeUserGuess()">Submit</button>
-            <p id="message"></p>
-            <!-- <p id="attempts"></p>
-            <p id="score"></p>               -->
-        </div>
-    </body>
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="hentai.js" defer></script>
+    <title>Hentai guess game</title>
+  </head>
+  <body>
+    <div>
+      <h1>This is my hentai guess game</h1>
+      <p>Try to guess the random number from 1 - 100. You have 6 trials only</p>
+      <p>
+        PS: if you can recommend at least three(3) hardcore hentai's you get
+        one(1) extra trial
+      </p>
+      <button id="button">Start game</button>
+      <span id="span">
+        <label for="guess">input your guess</label>
+        <input
+          type="number"
+          id="input"
+          placeholder="input a number"
+          min="1"
+          max="100"
+        />
+        <button id="submit">Submit guess</button>
+        <p id="high">Your guess is too high try again</p>
+        <p id="low">Your guess is too low try again</p>
+        <p id="over">your guess is above 100</p>
+        <p id="under">your guess is below 1</p>
+        <p id="sucess">correct!!!, you guessed the correct answer</p>
+        <p id="gameOver">Game over!!!, you ran out of free trials</p>
+        <input
+          type="text"
+          id="recommend"
+          placeholder="give me three hentai recommensations to get a free trial"
+        />
+        <button id="submit-recommend">Submit</button>
+        <p id="scam">
+          You are a bloddy scammer!! come on recommend hentai for me jare
+        </p>
+        <p id="count"></p>
+      </span>
+    </div>
+  </body>
 </html>
