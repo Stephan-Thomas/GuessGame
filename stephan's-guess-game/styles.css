@@ -1,0 +1,60 @@
+body {
+  background-color: orange;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  font-size: large;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+div span {
+  background-color: rgb(207, 153, 52);
+  padding: 100px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+div span input {
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+#high,
+#low,
+#sucess,
+#gameOver,
+#over,
+#under,
+#recommend,
+#submit-recommend,
+#scam {
+  display: none;
+}
+
+#submit-recommend {
+  width: 500px;
+}
