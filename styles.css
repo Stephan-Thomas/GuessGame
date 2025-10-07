@@ -8,6 +8,7 @@ div {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 5px;
 }
 
 button {
@@ -41,7 +42,7 @@ div span input {
   border-radius: 5px;
   padding: 5px;
   width: 300px;
-  height: 30px;
+  height: 50px;
 }
 
 #high,
@@ -57,5 +58,5 @@ div span input {
 }
 
 #submit-recommend {
-  width: 500px;
+  width: 250px;
 }
