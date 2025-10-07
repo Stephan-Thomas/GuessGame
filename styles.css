@@ -53,10 +53,14 @@ div span input {
 #under,
 #recommend,
 #submit-recommend,
-#scam {
+#scam, #gay {
   display: none;
 }
 
 #submit-recommend {
   width: 250px;
+}
+
+#gay{
+  color: red;
 }
