@@ -10,16 +10,20 @@ const low = document.getElementById("low");
 const gameOver = document.getElementById("gameOver");
 const recommend = document.getElementById("recommend");
 const submitRecommend = document.getElementById("submit-recommend");
-// let count = document.getElementById("count");
+let count = document.getElementById("count");
 const scam = document.getElementById("scam");
+const gay = document.getElementById("gay");
+const warning = document.getElementById("warning");
 
 let answer = Math.floor(Math.random() * 100) + 1;
 console.log(answer); //for dev purposes only
 let clickCount = 0;
+let maxTries = 6;
 
 function display() {
   clickCount = 0;
   input.value = "";
+  count.textContent = maxTries;
 
   success.style.display = "none";
   high.style.display = "none";
@@ -28,7 +32,10 @@ function display() {
   scam.style.display = "none";
   recommend.style.display = "none";
   submitRecommend.style.display = "none";
-
+  gay.style.display = "none";
+  warning.style.display = "none";
+  
+  count.style.display = "block";
   input.style.display = "block";
   submit.style.display = "block";
 
@@ -38,6 +45,8 @@ function display() {
 function checkAnswer() {
   const value = input.value;
   clickCount++;
+
+  count.textContent = maxTries - clickCount;
 
   if (value == answer) {
     success.style.display = "block";
@@ -69,6 +78,11 @@ function checkAnswer() {
     button.style.display = "block";
     recommend.style.display = "block";
     submitRecommend.style.display = "block";
+    gay.style.display = "block";
+  }
+
+  if (count <= 3){
+    warning.style.display = "block";
   }
 }
 
@@ -79,7 +93,9 @@ function addTrial() {
   }
   scam.style.display = "none";
 
-  clickCount = 5;
+  clickCount = maxTries - 1;
+  count.textContent = 1;
+
   recommend.style.display = "none";
   submitRecommend.style.display = "none";
   gameOver.style.display = "none";
