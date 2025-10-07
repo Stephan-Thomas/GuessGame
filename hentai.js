@@ -69,6 +69,11 @@ function checkAnswer() {
     input.value = "";
   }
 
+  if (count <= 3){
+    warning.style.display = "block";
+    count.style.color = "red"
+  }
+
   if (clickCount >= 6 && value != answer) {
     gameOver.style.display = "block";
     input.style.display = "none";
@@ -80,10 +85,6 @@ function checkAnswer() {
     submitRecommend.style.display = "block";
     gay.style.display = "block";
   }
-
-  if (count <= 3){
-    warning.style.display = "block";
-  }
 }
 
 function addTrial() {
@@ -92,6 +93,7 @@ function addTrial() {
     return;
   }
   scam.style.display = "none";
+  gay.style.display = "none";
 
   clickCount = maxTries - 1;
   count.textContent = 1;
