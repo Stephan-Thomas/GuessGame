@@ -87,6 +87,7 @@ function checkAnswer() {
     recommend.style.display = "block";
     submitRecommend.style.display = "block";
     gay.style.display = "block";
+    warning.style.display = "none";
   }
 }
 
