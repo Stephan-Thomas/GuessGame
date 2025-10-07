@@ -24,7 +24,7 @@ button {
 div span {
   background-color: rgb(207, 153, 52);
   padding: 10px;
-  width: 100%;
+  width: 90%;
   border: 1px solid transparent;
   border-radius: 20px;
   display: none;
@@ -42,7 +42,7 @@ div span input {
   border-radius: 5px;
   padding: 5px;
   width: 300px;
-  height: 50px;
+  height: 30px;
 }
 
 #high,
@@ -53,7 +53,7 @@ div span input {
 #under,
 #recommend,
 #submit-recommend,
-#scam, #gay {
+#scam, #gay, #warning {
   display: none;
 }
 
@@ -61,6 +61,6 @@ div span input {
   width: 250px;
 }
 
-#gay{
+#gay, #warning{
   color: red;
 }
