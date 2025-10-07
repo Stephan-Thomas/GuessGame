@@ -69,9 +69,12 @@ function checkAnswer() {
     input.value = "";
   }
 
-  if (count <= 3){
-    warning.style.display = "block";
-    count.style.color = "red"
+  if (Number(count.textContent) <= 3) {
+  warning.style.display = "block";
+  count.style.color = "red";
+} else {
+  warning.style.display = "none";
+  count.style.color = "black";   
   }
 
   if (clickCount >= 6 && value != answer) {
